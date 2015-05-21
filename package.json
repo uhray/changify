@@ -1,0 +1,22 @@
+{
+  "name": "changify",
+  "version": "1.0.0",
+  "description": "Handle db changes with verification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Thompson <bobby@uhray.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jscs": "1.7.3",
+    "gulp-jscs": "^1.2.0",
+    "gulp": "^3.8.11"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "uuid": "^2.0.1",
+    "utile": "^0.3.0",
+    "moment": "^2.10.3"
+  }
+}
