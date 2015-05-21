@@ -75,7 +75,7 @@ Pass necessary configuration options to changfy.
 
 Returns a function that creates a uuid. Used as a *keygen*.
 
-<a href="#uuid" name="uuid">#</a> changify.**nums**(n)
+<a href="#add" name="add">#</a> changify.**nums**(n)
 
 Returns a function that creates a random number *n* digits long. It avoids `1` and `0` to avoid confusion with `I`, `L`, and `O`.
 
