@@ -66,10 +66,10 @@ Pass necessary configuration options to changfy.
 
 <a href="#add" name="add">#</a> changify.**add**(*key*, *validate*, *keygen*, *codeHandler*)
 
-  *key* - (required) - The key on the user object (e.g. `'email'`).
-  *validate* - (required) - A function to validate the new value is allows. It's called with `(newValue, callback)` where `callback` expected one boolean argument whether it's valid or not.
-  *keygen* - (required) - A key generator. Allows you to specify what type of key you. See below for some packaged with changify.
-  *codeHandler* - (required) - A function called when a change is made so you can email the user (or whatever you want to do). It's called with `(code, newValue, user)`, where the `code` is the unique code, the `newValue` is what they're changing it to, and the `user` is this user's Mongoose model.
+  * *key* - (required) - The key on the user object (e.g. `'email'`).
+  * *validate* - (required) - A function to validate the new value is allows. It's called with `(newValue, callback)` where `callback` expects to be called with *(valid, [value])*, where `valid` is a boolean of whether it's valid or not and `value` can override the value.
+  * *keygen* - (required) - A key generator. Allows you to specify what type of key you want. See below for some packaged with changify.
+  * *codeHandler* - (required) - A function called when a change is made so you can email the user (or whatever you want to do). It's called with `(code, newValue, user)`, where the `code` is the unique code, the `newValue` is what they're changing it to, and the `user` is this user's Mongoose model.
 
 <a href="#uuid" name="uuid">#</a> changify.**uuid**()
 
