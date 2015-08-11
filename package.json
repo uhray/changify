@@ -1,6 +1,6 @@
 {
   "name": "changify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Handle db changes with verification",
   "main": "index.js",
   "scripts": {
@@ -14,9 +14,10 @@
     "gulp": "^3.8.11"
   },
   "dependencies": {
+    "cors": "^2.7.1",
     "debug": "^2.2.0",
-    "uuid": "^2.0.1",
+    "moment": "^2.10.3",
     "utile": "^0.3.0",
-    "moment": "^2.10.3"
+    "uuid": "^2.0.1"
   }
 }
