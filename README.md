@@ -64,13 +64,14 @@ Pass necessary configuration options to changfy.
   * *router* - (required) - Pass the Express router.
   * *redirect* - (default: `'/'`) - The required url after a change has been verified.
 
-<a href="#add" name="add">#</a> changify.**add**(*key*, *validate*, *keygen*, *codeHandler*)
+<a href="#add" name="add">#</a> changify.**add**(*key*, *validate*, *keygen*, *codeHandler*, *onChange*)
 
   * *key* - (required) - The key on the user object (e.g. `'email'`).
   * *validate* - (required) - A function to validate the new value is allows. It's called with `(newValue, callback)` where `callback` expects to be called with *(valid, [value])*, where `valid` is a boolean of whether it's valid or not and `value` can override the value.
   * *keygen* - (required) - A key generator. Allows you to specify what type of key you want. See below for some packaged with changify.
   * *codeHandler* - (required) - A function called when a change is made so you can email the user (or whatever you want to do). It's called with `(code, newValue, user)`, where the `code` is the unique code, the `newValue` is what they're changing it to, and the `user` is this user's Mongoose model.
   * *cors* - (Optional) - This is an optional configuration to allow cors requests. If truthy and not an object, it creates a configuration for cors that allows all origins to request cross-origin and allows credentials to be stored. If the configuration is an object, this object will be passed as the options to the cors middleware.
+  * *onChange* - (Optional) - Function to be called when the value is changed. It's called with: `(userID, newValue, key, userObject)`.
 
 <a href="#uuid" name="uuid">#</a> changify.**uuid**()
 

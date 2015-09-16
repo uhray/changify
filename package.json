@@ -1,6 +1,6 @@
 {
   "name": "changify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Handle db changes with verification",
   "main": "index.js",
   "scripts": {
