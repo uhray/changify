@@ -4,7 +4,7 @@ var test = require('unit.js'),
     mongoose = require('mongoose'),
     tools = require('../lib/tools');
 
-describe('tools', function(){
+describe('tools', function() {
 
   it('tools.foreach', function() {
     var obj;
@@ -71,7 +71,7 @@ describe('tools', function(){
         e = 'error ----',
         result,
         mockRes = {
-          json: function (d) {
+          json: function(d) {
             result = d;
           }
         };
@@ -114,7 +114,7 @@ describe('tools', function(){
 
 });
 
-describe('proto', function(){
+describe('proto', function() {
 
   it('proto.launch', function() {
     var getCalled = 0,
@@ -217,4 +217,3 @@ describe('proto', function(){
   });
 
 });
-
