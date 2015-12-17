@@ -1,6 +1,6 @@
 {
   "name": "changify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Handle db changes with verification",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,11 @@
   "author": "Robert Thompson <bobby@uhray.com>",
   "license": "MIT",
   "devDependencies": {
-    "jscs": "1.7.3",
+    "gulp": "^3.8.11",
     "gulp-jscs": "^1.2.0",
-    "gulp": "^3.8.11"
+    "jscs": "1.7.3",
+    "mongoose": "^4.3.1",
+    "unit.js": "^2.0.0"
   },
   "dependencies": {
     "cors": "^2.7.1",

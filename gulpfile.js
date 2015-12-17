@@ -5,6 +5,7 @@ var gulp = require('gulp'),
 
 gulp.task('default', ['info']);
 gulp.task('lint', ['dolint']);
+gulp.task('test', ['dotest']);
 
 // Helper Tasks ----------------------------------------------------------------
 
@@ -14,4 +15,8 @@ gulp.task('info', function() {
 
 gulp.task('dolint', function() {
   return child.spawn('./node_modules/.bin/jscs', ['./'], { stdio: 'inherit' });
+});
+
+gulp.task('test', function() {
+  
 });
