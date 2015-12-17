@@ -13,10 +13,12 @@ gulp.task('info', function() {
   console.log('\nUsage:\t gulp [ lint ]\n');
 });
 
-gulp.task('dolint', function() {
-  return child.spawn('./node_modules/.bin/jscs', ['./'], { stdio: 'inherit' });
+gulp.task('dolint', function(cb) {
+  child.spawn('./node_modules/.bin/jscs', ['./'], { stdio: 'inherit' })
+       .on('close', cb);
 });
 
-gulp.task('test', function() {
-  
+gulp.task('test', function(cb) {
+  child.spawn('./node_modules/.bin/mocha', [], { stdio: 'inherit' })
+       .on('close', cb);
 });
