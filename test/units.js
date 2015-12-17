@@ -1,6 +1,5 @@
 var test = require('unit.js'),
     Changify = require('../index.js'),
-    cors = require('cors'),
     mongoose = require('mongoose'),
     tools = require('../lib/tools');
 
